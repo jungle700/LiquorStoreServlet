@@ -2,14 +2,7 @@ pipeline {
    agent any
 
    stages {
-      stage('Code Checkout') {
-         steps {
-            sh 'rm -r LiquorStoreServlet || true'
-            sh 'git clone https://github.com/jungle700/LiquorStoreServlet.git -b tunde'
-         }
-      }
-      
-
+        
       stage('Validation and Testing') {
          steps {
             sh 'cd LiquorStoreServlet; mvn clean install'
