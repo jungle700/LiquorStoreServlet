@@ -16,7 +16,11 @@ pipeline {
          }
       }
    
-       
+         stage('clean up') {
+         steps {
+            sh 'rm -rf *'
+         }
+      }   
        
    }
    
