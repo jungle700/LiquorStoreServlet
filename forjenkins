@@ -5,7 +5,7 @@ pipeline {
         
       stage('Validation and Testing') {
          steps {
-            sh 'cd LiquorStoreServlet; mvn clean install'
+            sh ' mvn clean install'
          }
       }
       
